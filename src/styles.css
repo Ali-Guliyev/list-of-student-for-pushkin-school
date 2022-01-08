@@ -1,3 +1,71 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  @apply p-2;
+}
+
+input,
+select,
+textarea {
+  @apply border border-gray-400 p-1;
+}
+
+.error {
+  @apply text-red-500;
+}
+
+.btn {
+  @apply border border-gray-400 px-4 py-1 bg-gray-200 hover:bg-gray-100;
+}
+
+.btn_img {
+  @apply btn flex items-center;
+}
+
+.btn_img img {
+  @apply mr-1 w-8;
+}
+
+.titleText {
+  @apply text-2xl font-medium mb-3 flex items-center;
+}
+
+.tdActionBtn {
+  padding: 0;
+}
+
+.tdActionBtn div {
+  @apply w-7 h-7 flex items-center justify-center;
+}
+
+.tdActionBtn img {
+  @apply w-4;
+}
+
+.tableTitle {
+  @apply text-xl font-bold mb-3;
+}
+
+.styledTable tr,
+.styledTable td,
+.styledTable th {
+  @apply border border-gray-400 px-2 py-1;
+}
+
+.styledTable th {
+  @apply font-medium bg-gray-100;
+}
+
+.styledTable tr:nth-child(even) {
+  @apply bg-gray-200;
+}
+
+.inputContainer {
+  @apply flex items-center;
+}
+
+.inputContainer * {
+  @apply mr-2;
+}
